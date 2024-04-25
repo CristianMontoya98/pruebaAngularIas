@@ -1,0 +1,21 @@
+<section class="addressSection">
+  <form [formGroup]="addressForm">
+    <div class="formElement">
+      <label for="department">Departamento:</label>
+      <select name="department" id="department" formControlName="department">
+        <option *ngFor="let department of departments" value="">{{department}}</option>
+      </select>
+    </div>
+    <div class="formElement">
+      <label for="department">Ciudad:</label>
+      <select name="city" id="city" formControlName="city">
+        <option value="">Example</option>
+      </select>
+    </div>
+    <div class="formElement">
+      <label for="address">Direccion: </label>
+      <input name="address" type="text" formControlName="address">
+    </div>
+  </form>
+</section>
+<router-outlet></router-outlet>

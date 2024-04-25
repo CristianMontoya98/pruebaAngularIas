@@ -1,0 +1,18 @@
+.addressSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d1d1d;
+  form {
+    color: white;
+    font-size: 20px;
+    .formElement {
+      margin-top: 10px;
+      select {
+        margin-left: 5px;
+      }
+    }
+  }
+}
